@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --myBgGradient: linear-gradient(#45bceb, #10597c);
+  --White: #f1f9fe;
+  --BlueSky: #45bceb;
+  --MetalBlue: #10597c;
+  --DarkBlue: #0c2f45;
+}
+
+body {
+  background-image: var(--myBgGradient);
+}
+#select-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8em;
+  height: 2em;
+  /* padding: 0.5em; */
+  text-align: center;
+  color: var(--DarkBlue);
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px #999;
+  background: var(--White);
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
