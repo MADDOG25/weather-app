@@ -4,7 +4,6 @@ import { getCities } from "./services/cities";
 import { getCityWeather } from "./services/weather";
 
 import { TiWeatherWindyCloudy } from "react-icons/ti";
-import ScrollReveal from "scrollreveal";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -31,20 +30,16 @@ function App() {
       setWeather(await getCityWeather(e.currentTarget.value));
   };
 
-  //ScrollReveal
-  ScrollReveal().reveal(".weather-reveal", { duration: 3000 });
-  ScrollReveal().reveal(".country-delay", { delay: 2000 });
-
   return (
     <>
       <main className="w-screen md:w-auto h-screen font-mono">
         <section>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="flex justify-center items-center text-3xl font-bold text-[--DarkBlue] p-8 weather-reveal">
+            <h1 className="flex justify-center items-center text-3xl font-bold text-[--DarkBlue] p-8">
               App del Clima
               <TiWeatherWindyCloudy className="p-2" size="1.8em" />
             </h1>
-            <div className="flex flex-col justify-center items-center p-6 country-delay">
+            <div className="flex flex-col justify-center items-center p-6">
               <label className="text-[--White] text-lg">Elige un país: </label>
               <select
                 id="select-style"
