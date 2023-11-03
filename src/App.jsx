@@ -35,11 +35,11 @@ function App() {
       <main className="w-screen md:w-auto h-screen font-mono">
         <section>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="flex justify-center items-center text-3xl font-bold text-[--DarkBlue] p-8">
+            <h1 className="flex justify-center items-center text-2xl font-bold text-[--DarkBlue] p-8">
               App del Clima
               <TiWeatherWindyCloudy className="p-2" size="1.8em" />
             </h1>
-            <div className="flex flex-col justify-center items-center p-6">
+            <div className="flex flex-col justify-center items-center p-4">
               <label className="text-[--White] text-lg">Elige un país: </label>
               <select
                 id="select-style"
@@ -56,7 +56,7 @@ function App() {
             </div>
             {/* Short circiut render */}
             {cities.length > 0 && (
-              <div className="flex flex-col justify-center items-center p-6">
+              <div className="flex flex-col justify-center items-center p-4">
                 <label className="text-[--White] text-lg">
                   Elige una ciudad o estado:{" "}
                 </label>
@@ -74,7 +74,7 @@ function App() {
             )}
           </div>
         </section>
-        <section className="w-full md:w-auto pt-6">
+        <section className="w-full md:w-auto pt-4">
           {/* Short circiut render */}
           {weather && (
             <div className="flex flex-col justify-center items-center">
